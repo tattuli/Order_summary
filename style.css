@@ -8,6 +8,7 @@ body {
   background-color: hsl(225, 100%, 94%);
   background-image: url(img/pattern-background-desktop.svg);
   background-repeat: no-repeat;
+  background-size: contain;
   height: 100vh;
   display: flex;
   justify-content: center;
