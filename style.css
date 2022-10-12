@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(img/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  width: 450px;
+  height: 697px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Red Hat Display', sans-serif;
+  text-align: center;
+}
+
+.illustration {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.title {
+  color: hsl(223, 47%, 23%);
+  font-size: 28px;
+  width: 354px;
+  margin-top: 45px;
+}
+
+.title, .plan {
+  font-weight: 900;
+}
+
+.text, .plan, .price {
+  font-size: 16px;
+}
+
+.text , .price {
+  font-weight: 500;
+}
+
+.text {
+  color:hsl(224, 23%, 55%);
+  line-height: 25px;
+  height: 78px;
+  width: 354px;
+  margin-top: 17px;
+}
+
+.details-box {
+  width: 354px;
+  height: 98px;
+  background-color:hsl(225, 100%, 98%);
+  border-radius: 11px;
+  display: grid;
+  grid-template-columns: 72px 130px 200px;
+  align-items: center;
+  align-content: center;
+  margin-top: 20px;
+}
+ 
+.price {
+  grid-column: 2 / 3;
+  color:  hsl(224, 23%, 55%);
+}
+
+.change {
+  grid-column: 3 / 4;
+  grid-row: 1/span 2;
+  font-weight:700;
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+}
+
+.change:hover {
+  cursor: pointer;
+  color: #766CF1;
+  text-decoration: none;
+}
+
+.music {
+  grid-row: 1 / span 2;
+  margin-left: 24px;
+}
+
+.payment-box {
+  background-color: hsl(245, 75%, 52%);
+  width: 354px;
+  height: 50px;
+  border-radius: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+  color: #ffffff;
+}
+
+.payment-box, .order {
+  font-weight: 900;
+  font-size: 15px;
+  margin-top: 32px;
+}
+
+.payment-box:hover {
+  cursor: pointer;
+  background-color:#766CF1;
+}
+
+.order {
+  color:  hsl(224, 23%, 55%);
+  line-height: 19px;
+}
+
+.order:hover {
+  cursor: pointer;
+  color: #1F2E55;
+}
+
+
+@media (max-width:375px) {
+  body {
+    background-image: url(img/pattern-background-mobile.svg);
+  }
+
+  .main-container {
+    width: 327px;
+    height: 567px;
+  }
+
+  .title {
+    font-size: 22px;
+    width: 263px;
+    margin-top: 32px;
+  }
+
+  .text {
+    font-size: 15px;
+    height: 75px;
+    width: 263px;
+    margin-top: 16px;
+  }
+  .details-box {
+    width: 279px;
+    height: 81px;
+    grid-template-columns: 52px 111px;
+    column-gap: 16px;
+  }
+
+  .plan, .price {
+    font-size: 14px;
+  }
+
+  .details-box, .payment-box, .order {
+    margin-top: 24px;
+  }
+
+  .music {
+    margin-left: 16px;
+  }
+
+  .payment-box {
+    width: 279px;
+  }
+}
